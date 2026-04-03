@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FileText, Globe, Link2, GitFork } from "lucide-react";
+import { FileText, Globe, Link2, GitFork, Briefcase, SquareCode } from "lucide-react";
 
 const footerLinks = {
   Product: [
@@ -92,9 +92,29 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} CVAnalyzer, Inc. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground">
-            Made with care for job seekers worldwide 🌍
-          </p>
+
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span>Built by</span>
+            <span className="font-medium text-foreground">Fatih Emre Barutcu</span>
+            <a
+              href="https://www.linkedin.com/in/fatih-emre-barut%C3%A7u-415457365/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="flex items-center justify-center w-6 h-6 rounded-md border border-border text-muted-foreground hover:text-[#0A66C2] hover:border-[#0A66C2]/40 transition-colors"
+            >
+              <Briefcase className="w-3 h-3" />
+            </a>
+            <a
+              href="https://github.com/FatihEmreBARUTCU0"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="flex items-center justify-center w-6 h-6 rounded-md border border-border text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
+            >
+              <SquareCode className="w-3 h-3" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
