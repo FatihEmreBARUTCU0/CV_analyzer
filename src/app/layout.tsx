@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,15 +19,18 @@ export const metadata: Metadata = {
     "Get your CV scored, optimized, and matched to job descriptions in seconds. Beat the ATS, land more interviews.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
+
   return (
     <html
       lang="tr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      {...(nonce ? { "data-nonce": nonce } : {})}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
