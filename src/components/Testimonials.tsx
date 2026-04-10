@@ -5,7 +5,7 @@ const testimonials = [
     name: "Sarah Mitchell",
     role: "Software Engineer → Senior SWE at Stripe",
     avatar: "SM",
-    avatarColor: "bg-violet-500",
+    avatarColor: "bg-violet-700",
     rating: 5,
     quote:
       "My ATS score went from 54 to 91 after one session with CVAnalyzer. I had been applying for three months with zero callbacks. Two weeks after optimizing my CV, I had four interviews — including Stripe.",
@@ -14,7 +14,7 @@ const testimonials = [
     name: "James Okafor",
     role: "Marketing Manager, London",
     avatar: "JO",
-    avatarColor: "bg-cyan-600",
+    avatarColor: "bg-cyan-700",
     rating: 5,
     quote:
       "I was skeptical about AI resume tools, but this is genuinely different. It pointed out that I was using passive voice throughout and my impact statements had zero numbers. Fixed both and landed a role paying 22% more than my previous one.",
@@ -23,7 +23,7 @@ const testimonials = [
     name: "Priya Nair",
     role: "Career Coach, 300+ clients",
     avatar: "PN",
-    avatarColor: "bg-emerald-600",
+    avatarColor: "bg-emerald-700",
     rating: 5,
     quote:
       "I recommend CVAnalyzer to every one of my clients before they apply anywhere. The keyword gap analysis alone saves hours of research. It's become an essential part of my coaching toolkit.",
@@ -32,7 +32,7 @@ const testimonials = [
     name: "Daniel Krause",
     role: "Product Designer → Design Lead at Figma",
     avatar: "DK",
-    avatarColor: "bg-pink-600",
+    avatarColor: "bg-pink-700",
     rating: 5,
     quote:
       "The job match scoring feature is incredible. I pasted the Figma job description and could see exactly where my CV fell short. Spent 40 minutes fixing it. Got the call the next week.",
@@ -41,7 +41,7 @@ const testimonials = [
     name: "Yuki Tanaka",
     role: "Data Analyst, Toronto",
     avatar: "YT",
-    avatarColor: "bg-amber-600",
+    avatarColor: "bg-amber-700",
     rating: 5,
     quote:
       "As a non-native English speaker, the real-time suggestions were a game changer. It rewrote my awkward phrasing into something crisp and professional without losing my voice.",
@@ -50,7 +50,7 @@ const testimonials = [
     name: "Léa Dupont",
     role: "Finance Grad → Analyst at Goldman Sachs",
     avatar: "LD",
-    avatarColor: "bg-indigo-500",
+    avatarColor: "bg-indigo-700",
     rating: 5,
     quote:
       "Applied to 200 roles before using CVAnalyzer — 3 responses. Applied to 40 after — 11 responses. The math speaks for itself. I got my offer at Goldman using the optimized version.",

@@ -97,16 +97,16 @@ function ResultCard({ result }: { result: AnalysisResult }) {
         </div>
 
         <div className="sm:col-span-2 rounded-2xl border border-border bg-card p-6">
-          <h4 className="text-sm font-semibold mb-2">Overall Assessment</h4>
+          <h3 className="text-sm font-semibold mb-2">Overall Assessment</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">{result.summary}</p>
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="rounded-2xl border border-border bg-card p-6">
-          <h4 className="text-sm font-semibold text-emerald-600 mb-3 flex items-center gap-2">
+          <h3 className="text-sm font-semibold text-emerald-600 mb-3 flex items-center gap-2">
             <CheckCircle2 className="w-4 h-4" /> Strengths
-          </h4>
+          </h3>
           <ul className="space-y-2">
             {result.strengths.map((s) => (
               <li key={s} className="flex items-start gap-2 text-sm">
@@ -118,9 +118,9 @@ function ResultCard({ result }: { result: AnalysisResult }) {
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-6">
-          <h4 className="text-sm font-semibold text-amber-600 mb-3 flex items-center gap-2">
+          <h3 className="text-sm font-semibold text-amber-600 mb-3 flex items-center gap-2">
             <AlertCircle className="w-4 h-4" /> Improvements
-          </h4>
+          </h3>
           <ul className="space-y-2">
             {result.improvements.map((s) => (
               <li key={s} className="flex items-start gap-2 text-sm">
@@ -133,7 +133,7 @@ function ResultCard({ result }: { result: AnalysisResult }) {
       </div>
 
       <div className="rounded-2xl border border-border bg-card p-6">
-        <h4 className="text-sm font-semibold mb-3">Missing Keywords</h4>
+        <h3 className="text-sm font-semibold mb-3">Missing Keywords</h3>
         <div className="flex flex-wrap gap-2">
           {result.keywords_missing.map((kw) => (
             <span
@@ -148,7 +148,7 @@ function ResultCard({ result }: { result: AnalysisResult }) {
 
       <div className="rounded-2xl border border-border bg-card p-6">
         <div className="flex items-center justify-between mb-3">
-          <h4 className="text-sm font-semibold">AI-Rewritten Summary</h4>
+          <h3 className="text-sm font-semibold">AI-Rewritten Summary</h3>
           <CopyButton text={result.rewritten_summary} />
         </div>
         <p className="text-sm text-muted-foreground leading-relaxed italic">
@@ -315,7 +315,7 @@ export default function Analyzer() {
               rows={3}
               className="w-full resize-none rounded-xl border border-border bg-background px-3.5 py-2.5 text-sm placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-ring/40 transition-shadow"
             />
-            <p className="text-right text-xs text-muted-foreground/60 mt-1">
+            <p className="text-right text-xs text-muted-foreground mt-1">
               {jobDescription.length} / 500
             </p>
           </div>

@@ -33,7 +33,7 @@ const footerLinks = {
 
 const socials = [
   { label: "X / Twitter", icon: Globe, href: "https://twitter.com" },
-  { label: "LinkedIn", icon: Link2, href: "https://linkedin.com" },
+  { label: "LinkedIn Social", icon: Link2, href: "https://linkedin.com" },
   { label: "GitHub", icon: GitFork, href: "https://github.com" },
 ];
 
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="text-sm font-semibold mb-4">{category}</h4>
+              <h3 className="text-sm font-semibold mb-4">{category}</h3>
               <ul className="space-y-2.5">
                 {links.map(({ label, href }) => (
                   <li key={label}>
@@ -100,7 +100,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/fatih-emre-barut%C3%A7u-415457365/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="LinkedIn Profile"
               className="flex items-center justify-center w-6 h-6 rounded-md border border-border text-muted-foreground hover:text-[#0A66C2] hover:border-[#0A66C2]/40 transition-colors"
             >
               <Briefcase className="w-3 h-3" />

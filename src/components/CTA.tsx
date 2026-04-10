@@ -65,7 +65,11 @@ export default function CTA() {
                 onSubmit={handleSubmit}
                 className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
               >
+                <label htmlFor="cta-email" className="sr-only">
+                  Email adresiniz
+                </label>
                 <input
+                  id="cta-email"
                   type="email"
                   required
                   value={email}

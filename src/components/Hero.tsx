@@ -51,7 +51,11 @@ export default function Hero() {
         </p>
 
         <div className="animate-fade-up delay-300 flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto mb-12">
+          <label htmlFor="email" className="sr-only">
+            Email adresiniz
+          </label>
           <input
+            id="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

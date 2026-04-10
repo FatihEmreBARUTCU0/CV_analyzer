@@ -67,7 +67,7 @@ export default function HowItWorks() {
               >
                 <Icon className={`w-9 h-9 ${color}`} />
               </div>
-              <span className="text-xs font-bold text-muted-foreground/50 tracking-widest uppercase mb-2">
+              <span className="text-xs font-bold text-muted-foreground tracking-widest uppercase mb-2">
                 Step {step}
               </span>
               <h3 className="text-xl font-semibold mb-3">{title}</h3>
