@@ -79,7 +79,7 @@ export default function CTA() {
                 />
                 <Button
                   type="submit"
-                  className="rounded-full bg-violet-500 hover:bg-violet-400 text-white gap-2 px-6 shrink-0 hover:scale-[1.03] active:scale-[0.98] transition-all"
+                  className="rounded-full bg-violet-700 hover:bg-violet-600 text-white gap-2 px-6 shrink-0 hover:scale-[1.03] active:scale-[0.98] transition-all"
                 >
                   Analyze Free
                   <ArrowRight className="w-4 h-4" />

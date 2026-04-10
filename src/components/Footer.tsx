@@ -34,7 +34,7 @@ const footerLinks = {
 const socials = [
   { label: "X / Twitter", icon: Globe, href: "https://twitter.com" },
   { label: "LinkedIn Social", icon: Link2, href: "https://linkedin.com" },
-  { label: "GitHub", icon: GitFork, href: "https://github.com" },
+  { label: "GitHub Social", icon: GitFork, href: "https://github.com" },
 ];
 
 export default function Footer() {
@@ -109,7 +109,7 @@ export default function Footer() {
               href="https://github.com/FatihEmreBARUTCU0"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label="GitHub Profile"
               className="flex items-center justify-center w-6 h-6 rounded-md border border-border text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
             >
               <SquareCode className="w-3 h-3" />

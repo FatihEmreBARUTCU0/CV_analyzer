@@ -263,6 +263,7 @@ export default function Analyzer() {
               type="file"
               accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
               className="sr-only"
+              aria-label="CV dosyanızı yükleyin (PDF veya DOCX)"
               onChange={(e) => {
                 const f = e.target.files?.[0];
                 if (f) validateAndSet(f);
@@ -331,7 +332,7 @@ export default function Analyzer() {
             <Button
               onClick={handleAnalyze}
               disabled={!file || status === "loading"}
-              className="flex-1 rounded-full gap-2 h-11 text-sm font-medium"
+              className="flex-1 rounded-full gap-2 h-11 text-sm font-medium bg-violet-700 hover:bg-violet-600 text-white"
             >
               {status === "loading" ? (
                 <>

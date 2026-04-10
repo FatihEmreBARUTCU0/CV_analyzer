@@ -64,7 +64,7 @@ export default function Hero() {
           />
           <Button
             size="lg"
-            className="rounded-full bg-violet-500 hover:bg-violet-400 text-white px-6 gap-2 shrink-0 transition-all duration-200 hover:scale-[1.03] active:scale-[0.98]"
+            className="rounded-full bg-violet-700 hover:bg-violet-600 text-white px-6 gap-2 shrink-0 transition-all duration-200 hover:scale-[1.03] active:scale-[0.98]"
           >
             Analyze My CV
             <ArrowRight className="w-4 h-4" />
